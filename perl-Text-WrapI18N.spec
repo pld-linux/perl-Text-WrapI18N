@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Text
 %define		pnam	WrapI18N
-Summary:	Text::WrapI18N - Line wrapping module with support for i18n
+Summary:	Text::WrapI18N - line wrapping module with support for i18n
 Summary(pl):	Text::WrapI18N - modu³ zawijaj±cy linie z obs³ug± miêdzynarodowo¶ci
 Name:		perl-Text-WrapI18N
 Version:	0.06
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
