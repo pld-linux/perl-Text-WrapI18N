@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Text
 %define		pnam	WrapI18N
@@ -9,8 +13,11 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0799c16a00926e6c18d400c2e2861d5f
+%if %{with tests}
+BuildRequires:	perl-Text-CharWidth >= 0.02
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -44,6 +51,8 @@ s³owami (jak chiñski czy japoñski).
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
