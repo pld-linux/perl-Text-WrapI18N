@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	WrapI18N
 Summary:	Text::WrapI18N - line wrapping module with support for i18n
-Summary(pl.UTF-8):   Text::WrapI18N - moduł zawijający linie z obsługą międzynarodowości
+Summary(pl.UTF-8):	Text::WrapI18N - moduł zawijający linie z obsługą międzynarodowości
 Name:		perl-Text-WrapI18N
 Version:	0.06
 Release:	1
