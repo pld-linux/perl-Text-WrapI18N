@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	WrapI18N
 Summary:	Text::WrapI18N - line wrapping module with support for i18n
-Summary(pl):	Text::WrapI18N - modu³ zawijaj±cy linie z obs³ug± miêdzynarodowo¶ci
+Summary(pl.UTF-8):   Text::WrapI18N - moduÅ‚ zawijajÄ…cy linie z obsÅ‚ugÄ… miÄ™dzynarodowoÅ›ci
 Name:		perl-Text-WrapI18N
 Version:	0.06
 Release:	1
@@ -34,15 +34,15 @@ Asian characters). Also, minimal handling of languages which doesn't
 use whitespaces between words (like Chinese and Japanese) is
 supported.
 
-%description -l pl
-Ten modu³ ma byæ lepsz± wersj± Text::Wrap. Jest potrzebny do obs³ugi
-wielobajtowych kodowañ znaków, takich jak UTF-8, EUC-JP, EUC-KR,
-GB2312 i Big5. Obs³uguje tak¿e znaki o niestandardowej szeroko¶ci,
-takie jak znaki ³±czone (zajmuj±ce na terminalu zero kolumn, jak
-znaczniki diakrytyczne w UTF-8) i znaki pe³nej szeroko¶ci (zajmuj±ce
-na terminalu dwie kolumny, jak wiêkszo¶æ znaków wschodnioazjatyckich).
-Jest tak¿e minimalna obs³uga jêzyków nie u¿ywaj±cych odstêpów miêdzy
-s³owami (jak chiñski czy japoñski).
+%description -l pl.UTF-8
+Ten moduÅ‚ ma byÄ‡ lepszÄ… wersjÄ… Text::Wrap. Jest potrzebny do obsÅ‚ugi
+wielobajtowych kodowaÅ„ znakÃ³w, takich jak UTF-8, EUC-JP, EUC-KR,
+GB2312 i Big5. ObsÅ‚uguje takÅ¼e znaki o niestandardowej szerokoÅ›ci,
+takie jak znaki Å‚Ä…czone (zajmujÄ…ce na terminalu zero kolumn, jak
+znaczniki diakrytyczne w UTF-8) i znaki peÅ‚nej szerokoÅ›ci (zajmujÄ…ce
+na terminalu dwie kolumny, jak wiÄ™kszoÅ›Ä‡ znakÃ³w wschodnioazjatyckich).
+Jest takÅ¼e minimalna obsÅ‚uga jÄ™zykÃ³w nie uÅ¼ywajÄ…cych odstÄ™pÃ³w miÄ™dzy
+sÅ‚owami (jak chiÅ„ski czy japoÅ„ski).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
