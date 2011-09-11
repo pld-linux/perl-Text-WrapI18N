@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0799c16a00926e6c18d400c2e2861d5f
+URL:		http://search.cpan.org/dist/Text-WrapI18N/
 %if %{with tests}
 BuildRequires:	perl-Text-CharWidth >= 0.02
 %endif
