@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Text
 %define		pnam	WrapI18N
 Summary:	Text::WrapI18N - line wrapping module with support for i18n
